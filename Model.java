@@ -1,120 +1,12 @@
 package local.code;
 
-
-//import java.time.*;
-//import java.time.LocalDateTime;
-
-
 public class Model
-{
-	int x =0;
-	int y=0;
-	int l = 0; 
-
-	
+{	
 	
 	public Model() 
-	{
-		//System.out.println("Konstruktor Modell");
+	{		
 	}
-	
-	public Model(int x, int y) 
-	{
-		//System.out.println("Konstruktor Modell x y");
-		this.x=x;
-		this.y=y;
-	}
-	
-		
-	public Model(int l) {
-		this.l=l;
-	}
-
-		void modee() {
-			//System.out.println("Mockup Modell");
-		}
-	
-		
-		void schleife(int l) {
-		
-			for(int i = 0;i<l; i++ ) 
-			{
 				
-				/*
-				switch(i%1) {
-				case 1: System.out.println(i + "." + "Hello World");
-				}
-				*/
-				System.out.print("Hello World");
-				System.out.print("Hello World");
-			}
-		}
-		
-	
-		static boolean [][] matrix()
-		{
-			boolean [][] ma = new boolean [16][64];
-		
-			return ma;
-		}
-		
-		//Model mo = new Model();
-	
-								
-		boolean[][][] arrq()
-		{
-			
-			ModelData mo = new ModelData();
-			boolean[][][] arrq =	
-			{
-				mo.printHhObj(),
-				mo.printEhObj(),
-				mo.printLhObj(),
-				mo.printLhObj(),
-				mo.printOhObj(),
-				mo.printWhObj(),
-				mo.printOhObj(),
-				mo.printRhObj(),
-				mo.printLhObj(),
-				mo.printDhObj(),
-				mo.printBarspace()
-				
-			};
-			
-			return arrq;
-		}
-		
-		
-		
-		boolean[][][] arrk()
-		{
-			
-			ModelData mo = new ModelData();
-			boolean[][][] arrk =	{
-									mo.printHhObj(),
-									mo.printEhObj(),
-									mo.printLhObj(),
-									mo.printLhObj(),
-									mo.printOhObj()
-									};
-			
-			return arrk;
-		}
-
-//		//////////////////////////////////////////////////////////
-		//////////////////////////////////////////////////////////
-//		//////////////////////////////////////////////////////////
-		
-	
-		/*
-		 * Eine Eingabe von einem String soll zerlegt werden
-		 * und in einem Array mit den Objecten von ModelData
-		 * der Informationen vom Alphabet gefüllt werden.
-		 *
-		 *
-		 *Nicht gleich zuviel wollen. Wird mehrmals umgebaut.
-		 */
-	
 		public static String str;
 		
 		void setModel(String str)
@@ -129,12 +21,12 @@ public class Model
 		boolean [][][] getModel()
 		//20232803-2152
 		{
-//			System.out.println(this.str);
+
 			String str = this.str;
 			
 			ModelData mo = new ModelData();
 			
-//			String[] strQ = new String[26];
+
 		
 			boolean[][][] arrq 
 			= 
@@ -236,42 +128,11 @@ public class Model
 				default:
 					System.out.println("switch default Model");
 				}
-				
-
-				
-			}
-				
-		
-		/*	
-			ModelData mo = new ModelData();
-			boolean[][][] arrq =	{
-									mo.printHhObj(),
-									mo.printEhObj(),
-									mo.printLhObj(),
-									mo.printLhObj(),
-									mo.printOhObj()
-									};
-			
-
-		*/
+								
+			}				
+	
 		return arrq;
 		}
-				
-//	//////////////////////////////////////////////////////////
-	//////////////////////////////////////////////////////////
-//	//////////////////////////////////////////////////////////
-		
-		
 }
-
-/*20232903-1647
- * Aufregung im Problem. Ich werde es erstmal mit pseudo Code abstellen.
- * Und ein.
- * 
- * Bau ich erstmal ein Verfahren, wo das Array nicht fertig ist.
- * und den Stellen ein Inhalt übergeben wird?
-*/
-/*
- * Ich brauch eine Methode die vom Datentyp boolean ist
- */
+				
 
