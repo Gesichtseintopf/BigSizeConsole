@@ -33,7 +33,15 @@ class Run
 						
 						lo.logiWindowIni();
 						
-						break;						
+						break;	
+						
+					case "2":		
+						
+						System.out.println("TESTZONE");
+						
+						lo.logiWindow();
+						
+						break;	
 						
 					default:
 						System.out.println("Kein Argument bestimmt");
@@ -46,6 +54,8 @@ class Run
 					"Geben sie die Programmauswahl ein."
 					+ "\n"
 					+ "1 : 5x5 vergrößerte Ausgabe"
+					+ "\n"
+					+ "2 : Fenstermanager"
 					+ "\n"
 					
 				);
