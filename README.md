@@ -8,6 +8,6 @@ setModel(), getModel() and printModel(str) already on work! logiWondowIni() is p
 
 20230804-1310 JJJJDDMM-hhmm
 
-Logic.printBig([Strint][boolean])
+Logic.printBig([String][boolean])
 
 Easy integration ready, with border with true and false.
