@@ -2,6 +2,20 @@ package local.code;
 
 import java.io.*;
 
+/**
+ * 
+ * @author nachneunkommtacht@gmail.com
+ * @version 0.1
+ * @since April 2023
+ */
+
+/**
+ *Working Directory JJJJTTMM-HHMM
+ * 20230604-2149
+ * 
+ *
+ */
+
 public class User{
 
 	public User() {

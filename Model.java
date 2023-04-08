@@ -1,5 +1,19 @@
 package local.code;
 
+/**
+ * 
+ * @author nachneunkommtacht@gmail.com
+ * @version 0.2
+ * @since April 2023
+ */
+
+/**
+ *Working Directory JJJJTTMM-HHMM
+ * 20230604-2149
+ * 20230804-1252
+ *
+ */
+
 public class Model
 {	
 	
@@ -8,12 +22,14 @@ public class Model
 	}
 				
 		public static String str;
+		public static boolean[][][] arrq;
+//		public static boolean[][] arrq;
 		
 		void setModel(String str)
 		//20232903-2015
 		{
 			this.str = str;
-			System.out.println(this.str);
+//			System.out.println(this.str);
 		}
 		
 		
@@ -24,13 +40,13 @@ public class Model
 
 			String str = this.str;
 			
-			ModelData mo = new ModelData();
+			ModelData moDa = new ModelData();
 			
 
 		
 			boolean[][][] arrq 
 			= 
-			new boolean[str.length()][mo.getHigh()][mo.getWide()];
+			new boolean[str.length()][moDa.getHigh()][moDa.getWide()];
 			
 			char c;
 				
@@ -42,95 +58,99 @@ public class Model
 				switch(c)
 				{
 				case 'A':
-							arrq[k] = mo.printAhObj();
+							arrq[k] = moDa.printAhObj();
 					break;
 				case 'B':
-							arrq[k] = mo.printBhObj();
+							arrq[k] = moDa.printBhObj();
 					break;	
 				case 'C':
-							arrq[k] = mo.printChObj();
+							arrq[k] = moDa.printChObj();
 					break;
 				case 'D':
-							arrq[k] = mo.printDhObj();					
+							arrq[k] = moDa.printDhObj();					
 					break;
 				case 'E':
-							arrq[k] = mo.printEhObj();					
+							arrq[k] = moDa.printEhObj();					
 					break;	
 				case 'F':
-							arrq[k] = mo.printFhObj();	
+							arrq[k] = moDa.printFhObj();	
 					break;
 				case 'G':
-							arrq[k] = mo.printGhObj();					
+							arrq[k] = moDa.printGhObj();					
 					break;
 				case 'H':
-							arrq[k] = mo.printHhObj();				
+							arrq[k] = moDa.printHhObj();				
 					break;	
 				case 'I':
-							arrq[k] = mo.printIhObj();
+							arrq[k] = moDa.printIhObj();
 					break;
 				case 'J':
-							arrq[k] = mo.printJhObj();			
+							arrq[k] = moDa.printJhObj();			
 					break;
 				case 'K':
-							arrq[k] = mo.printKhObj();			
+							arrq[k] = moDa.printKhObj();			
 					break;	
 				case 'L':
-							arrq[k] = mo.printLhObj();
+							arrq[k] = moDa.printLhObj();
 					break;
 				case 'M':
-							arrq[k] = mo.printMhObj();			
+							arrq[k] = moDa.printMhObj();			
 					break;
 				case 'N':
-							arrq[k] = mo.printNhObj();			
+							arrq[k] = moDa.printNhObj();			
 					break;	
 				case 'O':
-							arrq[k] = mo.printOhObj();
+							arrq[k] = moDa.printOhObj();
 					break;
 				case 'P':
-							arrq[k] = mo.printPhObj();
+							arrq[k] = moDa.printPhObj();
 					break;
 				case 'Q':
-							arrq[k] = mo.printQhObj();
+							arrq[k] = moDa.printQhObj();
 					break;
 				case 'R':
-							arrq[k] = mo.printRhObj();
+							arrq[k] = moDa.printRhObj();
 					break;
 				case 'S':
-							arrq[k] = mo.printShObj();
+							arrq[k] = moDa.printShObj();
 					break;
 				case 'T':
-							arrq[k] = mo.printThObj();
+							arrq[k] = moDa.printThObj();
 					break;
 				case 'U':
-							arrq[k] = mo.printUhObj();
+							arrq[k] = moDa.printUhObj();
 					break;
 				case 'V':
-							arrq[k] = mo.printVhObj();
+							arrq[k] = moDa.printVhObj();
 					break;
 				case 'W':
-							arrq[k] = mo.printWhObj();
+							arrq[k] = moDa.printWhObj();
 					break;
 				case 'X':
-							arrq[k] = mo.printXhObj();
+							arrq[k] = moDa.printXhObj();
 					break;
 				case 'Y':
-							arrq[k] = mo.printYhObj();
+							arrq[k] = moDa.printYhObj();
 					break;
 				case 'Z':
-							arrq[k] = mo.printZhObj();
+							arrq[k] = moDa.printZhObj();
 					break;
 				case ' ':
-							arrq[k] = mo.printBarspace();
+							arrq[k] = moDa.printBarspace();
 				break;
 
 			
 					
 				default:
-					System.out.println("switch default Model");
+					
+					arrq[k] = moDa.printBarspace();
+//					System.out.println("switch default Model");
 				}
 								
 			}				
 	
+		this.arrq = arrq;
+		
 		return arrq;
 		}
 }

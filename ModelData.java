@@ -1,11 +1,16 @@
 package local.code;
 
-
 /**
  * 
+ * @author nachneunkommtacht@gmail.com
+ * @version 0.1
+ * @since April 2023
+ */
+
+/**
+ *Working Directory JJJJTTMM-HHMM
+ * 20230604-2149
  * 
- * 
- * @author nachn
  *
  */
 

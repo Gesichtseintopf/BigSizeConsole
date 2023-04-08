@@ -8,7 +8,17 @@ class Run
 	{
 		// TODO Auto-generated method stub
 		/**
+		 * 
 		 * @author nachneunkommtacht@gmail.com
+		 * @version 0.3
+		 * @since April 2023
+		 */
+
+		/**
+		 *Working Directory JJJJTTMM-HHMM
+		 * 20230604-2149
+		 * 20230704-XXXX
+		 * 20230804-1250
 		 */
 		
 		Logic lo = new Logic();	
@@ -31,22 +41,34 @@ class Run
 						
 						System.out.println("EINGABE BITTE 'Nur Großbuchstaben'");
 						
-						lo.logiWindowIni();
 						
-						break;						
+						lo.printBig(bs.eingabe(), true);
+						
+						break;	
+							
+							/*		
+								case "2":		
+									
+									System.out.println("TESTZONE");
+									
+									lo.logiWindow();
+									
+									break;	
+									
+							*/		
+												
 						
 					default:
-						System.out.println("Kein Argument bestimmt");
+						lo.printBig("PRINT BIG", true);
 				
 				}
 				
 				System.out.print("\n");
-				System.out.print
+				System.out.println
 				(
 					"Geben sie die Programmauswahl ein."
 					+ "\n"
-					+ "1 : 5x5 vergrößerte Ausgabe"
-					+ "\n"
+					+ "1 : 5x5 vergrößerte Ausgabe"	
 					
 				);
 					
